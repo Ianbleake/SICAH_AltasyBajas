@@ -306,7 +306,8 @@
 
     <div id="formulario-opcion2" style="display: none;">
       <h3>Formulario Plazas</h3>
-      <!-- Aquí puedes agregar los campos del formulario para la Opción 2 -->
+      <!-- Aquí puedes agregar los campos del formulario para alta de plaza -->
+      s
     </div>
   </div>
 

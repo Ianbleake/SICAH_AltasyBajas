@@ -41,7 +41,7 @@
         </div>
         <div class="row m-4">
             <div id="formulario-opcion1" style="display: none;">
-                <form action="">
+                <form action="">  <!-- Agregar aqui el action para la conexion y la subida a la BD -->
                     <h2>Datos personales</h2>
                     <hr>
                     <div class="row mb-3">
@@ -63,8 +63,7 @@
                         <div class="row mb-3">
                             <div class="col-md-3">
                                 <div class="mb-3">
-                                    <label for="exampleFormControlInput1" class="form-label">Observaciones</label>
-                                    <textarea name="precise" id="precise" cols="40" rows="4"></textarea>
+                                    
                                 </div>
                             </div>
 
@@ -82,17 +81,121 @@
 
             <div id="formulario-opcion2" style="display: none;">
                 <!-- Aquí puedes agregar los campos del formulario para la Opción 2 -->
-                <h1>hola chancho</h1>
+                <form action="">  <!-- Agregar aqui el action para la conexion y la subida a la BD -->
+                    <h2>Datos personales</h2>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">CURP</label>
+                                <input type="text" class="form-control" id="curp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Baja</label>
+                                <select class="form-select">
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3 offset-md-10 justify-content-end">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#confirmModal">Dar de Baja</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Ventana de confirmacion -->
             </div>
 
             <div id="formulario-opcion3" style="display: none;">
                 <!-- Aquí puedes agregar los campos del formulario para la Opción 2 -->
-                <h1>hola chancha</h1>
+                <form action="">  <!-- Agregar aqui el action para la conexion y la subida a la BD -->
+                    <h2>Datos personales</h2>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">CURP</label>
+                                <input type="text" class="form-control" id="curp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Baja</label>
+                                <select class="form-select">
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3 offset-md-10 justify-content-end">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#confirmModal">Dar de Baja</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Ventana de confirmacion -->
             </div>
 
             <div id="formulario-opcion4" style="display: none;">
                 <!-- Aquí puedes agregar los campos del formulario para la Opción 2 -->
-                <h1>hola chanche</h1>
+                <form action="">  <!-- Agregar aqui el action para la conexion y la subida a la BD -->
+                    <h2>Datos personales</h2>
+                    <hr>
+                    <div class="row mb-3">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">CURP</label>
+                                <input type="text" class="form-control" id="curp">
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Baja</label>
+                                <select class="form-select">
+                                    <option value="1">Si</option>
+                                    <option value="2">No</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="row mb-3">
+                            <div class="col-md-3">
+                                <div class="mb-3">
+                                    
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-3 offset-md-10 justify-content-end">
+                            <button type="button" class="btn btn-primary btn-lg" data-toggle="modal"
+                                data-target="#confirmModal">Dar de Baja</button>
+                        </div>
+                    </div>
+                </form>
+                <!-- Ventana de confirmacion -->
             </div>
         </div>
 
