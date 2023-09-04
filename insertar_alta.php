@@ -42,8 +42,9 @@ Datos registrados por el usuario: <br>
 $CONYUGUE
 ";
 
-//$inserta_dato="insert into datos_personales VALUES ($RFC,$NOMBRE,$NUMEMP,$CURP,$SEXO,$DOMICILIO,$COLONIA,$DELEGACION,$ENTIDAD,$TELCASA,$TELOFI,$CIVIL,$CONYUGUE,$NPADRE,$NMADRE,$NACION,$LUGARNACE,$DISCAPACIDAD,$OBSER,$HOMOCLAVE,$LENNAT,$FECHANACI,$EDAD,$EMAIL)";
-
+$inserta_dato="insert into datos_personales(RFC,NOMBRE,FNACIMIENTO,NUMEMP,CURP,SEXO,DOMICILIO,COLONIA,DELEG,ENTIDAD,TELCASA,TELOFI,CIVIL,CONYUGE,NPADRE,NMADRE,NACION,TIRNE_DISCAPACIDAD,LUGAR_NACIMIENTO,OBSERVACINES,Edad,HOMOCLAVE,HABLANTE_LENGUA,EMAIL) VALUES('$RFC','$NOMBRE','$FECHANACI','$NUMEMP','$CURP','$SEXO','$DOMICILIO','$COLONIA','$DELEGACION','$ENTIDAD','$TELCASA','$TELOFI','$CIVIL','$CONYUGUE','$NPADRE','$NMADRE','$NACION','$DISCAPACIDAD','$LUGARNACE','$OBSER','$EDAD','$HOMOCLAVE','$LENNAT','$EMAIL')";
+odbc_exec($link2,$inserta_dato);
+/*
 $inserta_rfc="insert into datos_personales(RFC) values ('$RFC')";
 odbc_exec($link2,$inserta_rfc);
 
@@ -115,9 +116,6 @@ odbc_exec($link2,$inserta_LENNAT);
 
 $inserta_EMAIL="insert into datos_personales(EMAIL) values ('$EMAIL')";
 odbc_exec($link2,$inserta_EMAIL);
-
-$inserta_LENNAT="insert into datos_personales(HABLANTE_LENGUA) values ('$LENNAT')";
-odbc_exec($link2,$inserta_LENNAT);
-
+*/
 
 ?>
