@@ -168,6 +168,12 @@
           </div>
           <div class="col-md-3">
             <div>
+              <label for="exampleFormControlInput1" class="form-label">Numero de interno</label>
+              <input type="text" class="form-control" name="numint" id="numint" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div>
               <label for="exampleFormControlInput1" class="form-label">Hablante de lengua nativa</label>
               <select class="form-select" name="hablanteLengua">
                 <option value="1">Si</option>
@@ -263,6 +269,34 @@
               <input type="text" class="form-control" name="ubicacion" id="ubicacion" required>
             </div>
           </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Adscripcion</label>
+              <input type="text" class="form-control" name="ubicacion" id="ads" required>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Tipo</label>
+              <input type="text" class="form-control" name="ubicacion" id="tipo" required>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Area de checado</label>
+              <input type="text" class="form-control" name="ubicacion" id="acheca" required>
+            </div>
+          </div>
+
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">ID de Funcion</label>
+              <input type="text" class="form-control" name="ubicacion" id="idfun" required>
+            </div>
+          </div>
+
         </div>
 
 
@@ -296,7 +330,7 @@
           
         <div class="row mb-3">
           <div class="col-md-3 offset-md-10 justify-content-end">
-            <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#confirmModal">Dar de Alta</button>
+            <button id="mostrarBoton" type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#confirmModal">Dar de Alta</button>
           </div>
         </div>
       </form>
@@ -345,6 +379,16 @@
       })
     })()
   </script>
+  <script>
+        // Obtén el botón por su ID
+        const botonMostrar = document.getElementById('mostrarBoton');
+
+        // Agrega un controlador de eventos al botón
+        botonMostrar.addEventListener('click', function() {
+            // Muestra una alerta al hacer clic en el botón
+            alert('Alta dada con exito.');
+        });
+    </script>
 
 </div>
 

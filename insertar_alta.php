@@ -29,93 +29,30 @@ $HOMOCLAVE = $_POST['homoClave'];
 $LENNAT = $_POST['hablanteLengua'];
 $EDAD = $_POST['edad'];
 $EMAIL = $_POST['correo'];
+$NUMINTER = $_POST['numint'];
 
+//Datos Laborales
 $NUMCONTRATO = $_POST['numContrato'];
 $TURNO   = $_POST['turno'];
+$ADS= $_POST['ads'];
 $FUNCION  = $_POST['funcion'];
 $UBICACION  = $_POST['ubicacion'];
-$MODALIDAD  = $_POST['modalidad'];
+$TIPO = $_POST['tipo'];
 $CHECADOR  = $_POST['checador'];
+$AREACHECA = $_POST['acheca'];
+$MODALIDAD  = $_POST['modalidad'];
+$IDFUN = $_POST['idfun'];
 
-echo" <BR>
-Datos registrados por el usuario: <br>
-$CONYUGUE
-";
 
-$inserta_dato="insert into datos_personales(RFC,NOMBRE,FNACIMIENTO,NUMEMP,CURP,SEXO,DOMICILIO,COLONIA,DELEG,ENTIDAD,TELCASA,TELOFI,CIVIL,CONYUGE,NPADRE,NMADRE,NACION,TIRNE_DISCAPACIDAD,LUGAR_NACIMIENTO,OBSERVACINES,Edad,HOMOCLAVE,HABLANTE_LENGUA,EMAIL) VALUES('$RFC','$NOMBRE','$FECHANACI','$NUMEMP','$CURP','$SEXO','$DOMICILIO','$COLONIA','$DELEGACION','$ENTIDAD','$TELCASA','$TELOFI','$CIVIL','$CONYUGUE','$NPADRE','$NMADRE','$NACION','$DISCAPACIDAD','$LUGARNACE','$OBSER','$EDAD','$HOMOCLAVE','$LENNAT','$EMAIL')";
+$inserta_dato="insert into datos_personales(RFC,NOMBRE,FNACIMIENTO,NUMEMP,CURP,SEXO,DOMICILIO,COLONIA,DELEG,ENTIDAD,TELCASA,TELOFI,CIVIL,CONYUGE,NPADRE,NMADRE,NACION,TIRNE_DISCAPACIDAD,LUGAR_NACIMIENTO,OBSERVACINES,Edad,HOMOCLAVE,HABLANTE_LENGUA,EMAIL,NUM_DE_INTERNO) VALUES('$RFC','$NOMBRE','$FECHANACI','$NUMEMP','$CURP','$SEXO','$DOMICILIO','$COLONIA','$DELEGACION','$ENTIDAD','$TELCASA','$TELOFI','$CIVIL','$CONYUGUE','$NPADRE','$NMADRE','$NACION','$DISCAPACIDAD','$LUGARNACE','$OBSER','$EDAD','$HOMOCLAVE','$LENNAT','$EMAIL','$NUMINTER')";
 odbc_exec($link2,$inserta_dato);
-/*
-$inserta_rfc="insert into datos_personales(RFC) values ('$RFC')";
-odbc_exec($link2,$inserta_rfc);
 
-$inserta_NOMBRE="insert into datos_personales(NOMBRE) values ('$NOMBRE')";
-odbc_exec($link2,$inserta_NOMBRE);
+$inserta_lab="insert into datos_laborales(CURP,NUMCON,TURNO,ADS,UBICACION,TIPO,CHECA,AREA_DE_CHECADO,MODALIDAD,ID_FUNCION,FUNCION) VALUES('$CURP','$NUMCONTRATO','$TURNO','$ADS','$UBICACION','$TIPO','$CHECADOR','$AREACHECA','$MODALIDAD','$IDFUN','$FUNCION')";
+odbc_exec($link2,$inserta_lab);
 
-$inserta_FECHANACI="insert into datos_personales(FNACIMIENTO) values ('$FECHANACI')";
-odbc_exec($link2,$inserta_FECHANACI);
+echo" HOLA $AREACHECA"; //REVISAR POR QUE NO SE GUARDA
 
-$inserta_NUMEMP="insert into datos_personales(NUMEMP) values ('$NUMEMP')";
-odbc_exec($link2,$inserta_NUMEMP);
-
-$inserta_CURP="insert into datos_personales(CURP) values ('$CURP')";
-odbc_exec($link2,$inserta_CURP);
-
-$inserta_SEXO="insert into datos_personales(SEXO) values ('$SEXO')";
-odbc_exec($link2,$inserta_SEXO);
-
-$inserta_DOM="insert into datos_personales(DOMICILIO) values ('$DOMICILIO')";
-odbc_exec($link2,$inserta_DOM);
-
-$inserta_COL="insert into datos_personales(COLONIA) values ('$COLONIA')";
-odbc_exec($link2,$inserta_COL);
-
-$inserta_DEL="insert into datos_personales(DELEG) values ('$DELEGACION')";
-odbc_exec($link2,$inserta_DEL);
-
-$inserta_ENTIDAD="insert into datos_personales(ENTIDAD) values ('$ENTIDAD')";
-odbc_exec($link2,$inserta_ENTIDAD);
-
-$inserta_TELCASA="insert into datos_personales(TELCASA) values ('$TELCASA')";
-odbc_exec($link2,$inserta_TELCASA);
-
-$inserta_TELOFI="insert into datos_personales(TELOFI) values ('$TELOFI')";
-odbc_exec($link2,$inserta_TELOFI);
-
-$inserta_CIVIL="insert into datos_personales(CIVIL) values ('$CIVIL')";
-odbc_exec($link2,$inserta_CIVIL);
-
-$inserta_CONYUGUE="insert into datos_personales(CONYUGE) values ('$CONYUGUE')";
-odbc_exec($link2,$inserta_CONYUGUE);
-
-$inserta_NPADRE="insert into datos_personales(NPADRE) values ('$NPADRE')";
-odbc_exec($link2,$inserta_NPADRE);
-
-$inserta_NMADRE="insert into datos_personales(NMADRE) values ('$NMADRE')";
-odbc_exec($link2,$inserta_NMADRE);
-
-$inserta_NACION="insert into datos_personales(NACION) values ('$NACION')";
-odbc_exec($link2,$inserta_NACION);
-
-$inserta_DISCAPACIDAD="insert into datos_personales(TIRNE_DISCAPACIDAD) values ('$DISCAPACIDAD')";
-odbc_exec($link2,$inserta_DISCAPACIDAD);
-
-$inserta_LUGARNACE="insert into datos_personales(LUGAR_NACIMIENTO) values ('$LUGARNACE')";
-odbc_exec($link2,$inserta_LUGARNACE);
-
-$inserta_OBSERVACINES="insert into datos_personales(OBSERVACINES) values ('$OBSER')";
-odbc_exec($link2,$inserta_OBSERVACINES);
-
-$inserta_EDAD="insert into datos_personales(Edad) values ('$EDAD')";
-odbc_exec($link2,$inserta_EDAD);
-
-$inserta_HOMOCLAVE="insert into datos_personales(HOMOCLAVE) values ('$HOMOCLAVE')";
-odbc_exec($link2,$inserta_HOMOCLAVE);
-
-$inserta_LENNAT="insert into datos_personales(HABLANTE_LENGUA) values ('$LENNAT')";
-odbc_exec($link2,$inserta_LENNAT);
-
-$inserta_EMAIL="insert into datos_personales(EMAIL) values ('$EMAIL')";
-odbc_exec($link2,$inserta_EMAIL);
-*/
+//header("Location: alta.php");
+  //      exit();
 
 ?>
