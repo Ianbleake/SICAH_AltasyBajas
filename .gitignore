@@ -1,0 +1,5 @@
+.idea/
+fotosdb/
+/vendor/
+whatsapp/node_modules/
+.env

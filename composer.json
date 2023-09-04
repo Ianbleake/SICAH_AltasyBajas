@@ -1,0 +1,12 @@
+{
+    "name": "administrador/sicah-web",
+    "require": {
+        "phpmailer/phpmailer": "^6.7",
+        "vlucas/phpdotenv": "^5.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Classes\\": "./classes"
+        }
+    }
+}

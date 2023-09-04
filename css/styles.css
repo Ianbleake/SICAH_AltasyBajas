@@ -1,0 +1,193 @@
+body {
+  background: #f1f1f1;
+  height: 100vh;
+}
+
+.form {
+  position: relative;
+}
+
+.form .fa-search {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  color: #9ca3af;
+}
+
+.form-input {
+  height: 55px;
+  text-indent: 10px;
+  border-radius: 10px;
+}
+
+.form-input:focus {
+  border-color: #5a12365a;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #5a12366d;
+}
+
+.bg-primary,
+.btn-primary {
+  background-color: #5a1236 !important;
+}
+
+.btn-primary:is(:hover, :active, :focus) {
+  background-color: #5a1236d3 !important;
+  color: #fff !important;
+}
+
+.f-12{
+  font-size: 12px;
+}
+
+.mt-8{
+  margin-top: 8rem;
+}
+
+html,body {
+  height: 100%;
+}
+
+.my-login-page .brand {
+  width: 200px;
+  height: auto;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 40px auto;
+  box-shadow: 0 4px 8px rgba(0,0,0,.05);
+  position: relative;
+  z-index: 1;
+}
+
+.my-login-page .brand img {
+  width: 100%;
+}
+
+.my-login-page .card-wrapper {
+  width: 400px;
+}
+
+.my-login-page .card {
+  border-color: transparent;
+  box-shadow: 0 4px 8px rgba(0,0,0,.05);
+}
+
+.my-login-page .card.fat {
+  padding: 10px;
+}
+
+.my-login-page .card .card-title {
+  margin-bottom: 30px;
+}
+
+.my-login-page .form-control {
+  border-width: 2.3px;
+}
+
+.my-login-page .form-group label {
+  width: 100%;
+}
+
+.my-login-page .btn.btn-block {
+  padding: 12px 10px;
+}
+
+.my-login-page .footer {
+  margin: 40px 0;
+  color: #f1f1f1;
+  text-align: center;
+}
+
+@media screen and (max-width: 425px) {
+  .my-login-page .card-wrapper {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .my-login-page .card.fat {
+    padding: 0;
+  }
+
+  .my-login-page .card.fat .card-body {
+    padding: 15px;
+  }
+}
+
+#curp::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+#name::-webkit-calendar-picker-indicator {
+  display: none !important;
+}
+
+.vh-50 {
+  height: 50vh!important;
+}
+
+/* Header IPN */
+.navbar {
+  padding: 0;
+}
+#barraGobmx2 {
+  background: #152d28;
+}
+#barraGobmx2 a{
+  color: #fff;
+  font-size: 12px;
+  font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.svg-inline--fa.fa-w-16 {
+  width: 1em;
+}
+
+/* Footer IPN */
+.piePagina {
+  position: relative;
+}
+.bg--grisOscuro, .ubicacion {
+  background: #333;
+  color: #fff;
+}
+.bg--grisOscuro .container {
+  padding-block: 35px;
+}
+
+.main-footer .list-info {
+  background-color: #13322b;
+  padding: 30px 0 70px;
+}
+.main-footer h5 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 12.5px;
+  margin-bottom: 12.5px;
+  font-family: inherit;
+  line-height: 1.1;
+}
+.main-footer .list-info a,
+.main-footer .list-info p{
+  color: #fff;
+  font-size: 12px;
+}
+.main-footer .list-info ul {
+  margin: 0 0 60px;
+  padding: 0;
+}
+.main-footer .list-info ul li {
+  list-style-type: none;
+  margin: 0 0 2px;
+  padding: 0;
+  line-height: 1.6;
+}
+.main-footer .list-info ul li a {
+  color: #fff;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.footer-pleca {
+  background-color: #12322b;
+  background-image: url(https://ipn.mx/assets/files/main/img/template/pleca.svg);
+  background-repeat: repeat-x;
+}
