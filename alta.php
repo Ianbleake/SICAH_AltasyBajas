@@ -288,7 +288,7 @@
           <div class="col-md-6">
             <div class="mb-3">
               <label for="exampleFormControlTextarea1" class="form-label">Observaciones</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+              <textarea name="OBSER" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
           </div>
           
