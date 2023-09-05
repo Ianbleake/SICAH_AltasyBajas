@@ -36,6 +36,8 @@
         </select>
       </div>
     </div>
+
+
     <div class="row m-4">
       <form id="formulario-opcion1" style="display: none;"  action="insertar_alta.php" method="POST" class="needs-validation" novalidate>
         <h2>Datos personales</h2>
@@ -339,9 +341,113 @@
     
 
     <div id="formulario-opcion2" style="display: none;">
-      <h3>Formulario Plazas</h3>
-      <!-- Aquí puedes agregar los campos del formulario para alta de plaza -->
-      s
+    <form  action="insertar_plaza.php" method="POST" class="needs-validation" novalidate>
+      <h3>Datos de la  plaza</h3>
+      <HR>
+      <div class="row mb-3">
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">CURP</label>
+              <input type="text" class="form-control" name="CURPP" id="CURPP" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">SUB</label>
+              <input type="text" class="form-control" name="SUB" id="SUB" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >CLAV</label>
+              <input type="text" class="form-control" name="CLAV" id="CLAV" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >NP</label>
+              <input type="text" class="form-control" name="NP" id="NP" required>
+            </div>
+          </div>
+        </div> 
+
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">CLAVE</label>
+              <input type="text" class="form-control" name="CLAVE" id="CLAVE" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">MOV</label>
+              <input type="text" class="form-control" name="MOV" id="MOV" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >FIN</label>
+              <input type="text" class="form-control" name="FIN" id="FIN" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >FTE</label>
+              <input type="text" class="form-control" name="FTE" id="FTE" required>
+            </div>
+          </div>
+        </div> 
+
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">FAC</label>
+              <input type="text" class="form-control" name="FAC" id="FAC" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">HIS</label>
+              <input type="text" class="form-control" name="HIS" id="HIS" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >TP</label>
+              <input type="text" class="form-control" name="TP" id="TP" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label" >PAS</label>
+              <input type="text" class="form-control" name="PAS" id="PAS" required>
+            </div>
+          </div>
+        </div> 
+
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">NIVEL</label>
+              <input type="text" class="form-control" name="NIVEL" id="NIVEL" required>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">DICTAMEN</label>
+              <input type="text" class="form-control" name="DICTAMEN" id="DICTAMEN" required>
+            </div>
+          </div>
+          
+        </div> 
+
+        <div class="row mb-3">
+          <div class="col-md-3 offset-md-10 justify-content-end">
+            <button id="mostrarBoton" type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#confirmModal">Dar de Alta</button>
+          </div>
+        </div>
+
+    </form>
     </div>
   </div>
 
