@@ -43,16 +43,15 @@ $AREACHECA = $_POST['acheca'];
 $MODALIDAD  = $_POST['modalidad'];
 $IDFUN = $_POST['idfun'];
 
+//echo" Datos que no llegan: $AREACHECA $ADS $TIPO $IDFUN";
 
 $inserta_dato="insert into datos_personales(RFC,NOMBRE,FNACIMIENTO,NUMEMP,CURP,SEXO,DOMICILIO,COLONIA,DELEG,ENTIDAD,TELCASA,TELOFI,CIVIL,CONYUGE,NPADRE,NMADRE,NACION,TIRNE_DISCAPACIDAD,LUGAR_NACIMIENTO,OBSERVACINES,Edad,HOMOCLAVE,HABLANTE_LENGUA,EMAIL,NUM_DE_INTERNO) VALUES('$RFC','$NOMBRE','$FECHANACI','$NUMEMP','$CURP','$SEXO','$DOMICILIO','$COLONIA','$DELEGACION','$ENTIDAD','$TELCASA','$TELOFI','$CIVIL','$CONYUGUE','$NPADRE','$NMADRE','$NACION','$DISCAPACIDAD','$LUGARNACE','$OBSER','$EDAD','$HOMOCLAVE','$LENNAT','$EMAIL','$NUMINTER')";
 odbc_exec($link2,$inserta_dato);
 
 $inserta_lab="insert into datos_laborales(CURP,NUMCON,TURNO,ADS,UBICACION,TIPO,CHECA,AREA_DE_CHECADO,MODALIDAD,ID_FUNCION,FUNCION) VALUES('$CURP','$NUMCONTRATO','$TURNO','$ADS','$UBICACION','$TIPO','$CHECADOR','$AREACHECA','$MODALIDAD','$IDFUN','$FUNCION')";
-odbc_exec($link2,$inserta_lab);
+odbc_exec($link2,$inserta_lab); 
 
-echo" HOLA $AREACHECA"; //REVISAR POR QUE NO SE GUARDA
-
-//header("Location: alta.php");
-  //      exit();
+header("Location: alta.php");
+       exit();
 
 ?>

@@ -272,28 +272,28 @@
           <div class="col-md-3">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Adscripcion</label>
-              <input type="text" class="form-control" name="ubicacion" id="ads" required>
+              <input type="text" class="form-control" name="ads" id="ads" required>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Tipo</label>
-              <input type="text" class="form-control" name="ubicacion" id="tipo" required>
+              <input type="text" class="form-control" name="tipo" id="tipo" required>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Area de checado</label>
-              <input type="text" class="form-control" name="ubicacion" id="acheca" required>
+              <input type="text" class="form-control" name="acheca" id="acheca" required>
             </div>
           </div>
 
           <div class="col-md-3">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">ID de Funcion</label>
-              <input type="text" class="form-control" name="ubicacion" id="idfun" required>
+              <input type="text" class="form-control" name="idfun" id="idfun" required>
             </div>
           </div>
 
