@@ -30,7 +30,7 @@
       </div>
       <div class="col-md-4">
         <select id="opcion" class="form-select text-center">
-          <option selected></option>
+          <option selected>Seleccione un tipo de Alta</option>
           <option value="opcion1">Personal</option>
           <option value="opcion2">Plaza</option>
         </select>
