@@ -5,11 +5,20 @@
         SICAH
       </a>
 
+      <a href="/sicah-web/comunicaciones.php" class="mb-2 mb-lg-0 text-white text-decoration-none">
+        Comunicaciones
+      </a>
+
+      <a href="/sicah-web/altas_bajas.php" class="mb-2 mb-lg-0 text-white text-decoration-none">
+        Altas y Bajas
+      </a>
+
       <p class="m-0">Bienvenido <span class="text-uppercase"><?php echo $_SESSION['user']['NOMBRE']; ?></span></p>
 
       <div class="d-flex align-items-center">
         <?php if (isset($volver)): ?>
           <a href='/sicah-web/consulta_personal.php' class='btn btn-outline-light me-2'>Volver</a>
+         
         <?php endif; ?>
 
         <?php if (isset($logout)): ?>
