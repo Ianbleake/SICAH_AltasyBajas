@@ -19,6 +19,7 @@
 
 <body>
     <?php include_once './partials/header_ipn.php'; ?>
+    <?php include_once './partials/header.php'; ?>
 
     <div class="container vh-">
         <div class="col-md-auto text-center m-4">
